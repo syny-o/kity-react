@@ -1,0 +1,34 @@
+[
+  {
+    "role": "Python Developer (Django)",
+    "organisation": "Virtuell",
+    "startDate": "2024",
+    "endDate": "",
+    "experiences": ["Tvorba/údržba aplikací ve frameworku Django"],
+    "imageSrc": "/assets/career/virtuell.png"
+  },
+  {
+    "role": "Software Tester / Python Engineer",
+    "organisation": "ZF",
+    "startDate": "2015",
+    "endDate": "",
+    "experiences": ["Testování SWru", "Vývoj nástrojů v jazyce Python"],
+    "imageSrc": "/assets/career/zf.png"
+  },
+  {
+    "role": "Technik vývojového centra",
+    "organisation": "EFG",
+    "startDate": "2013",
+    "endDate": "2015",
+    "experiences": ["Testování SW Aktion", "Údržba webových stránek"],
+    "imageSrc": "/assets/career/efg.png"
+  },
+  {
+    "role": "Student",
+    "organisation": "Technická univerzita v Liberci",
+    "startDate": "2007",
+    "endDate": "2013",
+    "experiences": ["Informační technologie"],
+    "imageSrc": "/assets/career/tul.png"
+  }
+]

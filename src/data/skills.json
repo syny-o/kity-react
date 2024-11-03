@@ -1,0 +1,30 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "/assets/skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "/assets/skills/css.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "/assets/skills/react.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "/assets/skills/javascript.png"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "/assets/skills/python.png"
+  },
+  {
+    "title": "Postgres",
+    "imageSrc": "/assets/skills/postgres.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "/assets/skills/bootstrap.png"
+  }
+]

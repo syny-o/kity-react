@@ -1,0 +1,26 @@
+[
+  {
+    "title": "R2 Editor",
+    "imageSrc": "/assets/hero/hero1.jpg",
+    "description": "Desktopová aplikace pro psaní automatických testů. Obsahuje našeptávač kódu, zvýraznění syntaxe, otevření/uložení projektu, propojení s requirements serverem.",
+    "skills": ["Python", "PyQt", "MS SQL"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Ubytování Prachovec",
+    "imageSrc": "/assets/hero/hero2.jpg",
+    "description": "Webová aplikace poskytující informace a rezervaci ubytování v areálu Prachovec. Disponuje redakčním systémem, kde lze mimo jiné rozesílat newslettery.",
+    "skills": ["Django", "Bootsrap", "Nginx", "Postgres"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Markéta Synková Portfolio",
+    "imageSrc": "/assets/hero/hero3.jpg",
+    "description": "Jednoduchá webová aplikace s fotogalerií kde frontend je napsán v Reactu a backend v Djangu. Komunikace je realizována prostřednictvím REST API.",
+    "skills": ["React", "Django", "Tailwind CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
