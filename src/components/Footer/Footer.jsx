@@ -6,12 +6,13 @@ function Footer() {
   return (
     <footer className="container">
       <div className="footer">
+        <div className="footer-logo">
+          <img src="/assets/logo/logo_signature.png" width={500} alt="" />
+        </div>
+        <div className="footer-text">
+          &copy; 2024 Marketa Synkova Fotografka
+        </div>
         <SocialBox />
-        <div>&copy; 2024 Marketa Synkova Fotografka</div>
-
-        {/* <div>
-          <img src="/assets/logo/logo_signature.png" width={300} alt="" />
-        </div> */}
       </div>
     </footer>
   );

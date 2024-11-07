@@ -9,7 +9,7 @@ const API_URL = "http://localhost:8000/my_app/api/";
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);
-  const [photosType, setPhotosType] = useState(["portrait-photos/"]);
+  const [photosType, setPhotosType] = useState("portrait-photos/");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

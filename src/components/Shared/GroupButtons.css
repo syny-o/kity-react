@@ -39,6 +39,8 @@
 
 .group-button-selected {
   border-bottom-color: #d53f8c;
+  border-top-color: #d53f8c;
+  color: #d53f8c;
 }
 
 button i {

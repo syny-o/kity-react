@@ -45,7 +45,8 @@
   font-family: var(--font-roboto);
   margin-bottom: 1.5rem;
   /* text-transform: uppercase; */
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: rgb(220, 220, 220);
 }
 
 .hero-technologies {
@@ -58,7 +59,7 @@
 .hero-img-container {
   width: 50vw;
   overflow: hidden;
-  border-radius: 50% 0 0 50%;
+  border-radius: 20% 0 0 60%;
   height: 100vh;
 }
 

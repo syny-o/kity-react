@@ -39,9 +39,9 @@
 }
 
 .career-item-details h3 {
-  font-size: 35px;
-  /* font-size: var(--font-m); */
-  /* font-weight: bold; */
+  /* font-size: 35px; */
+  font-size: var(--font-m);
+  font-weight: bold;
   text-transform: uppercase;
   font-weight: normal;
 }
