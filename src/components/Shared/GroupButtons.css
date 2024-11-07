@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  padding-bottom: 40px;
 }
 
 .group-button {
@@ -12,7 +13,7 @@
   color: var(--color-text);
   /* border-radius: 100px; */
   /* border: none; */
-  border: 2px solid var(--color-text);
+  border: 3px solid var(--color-text);
   font-size: 20px;
   /* font-weight: 600; */
   padding: 17px 26px;
@@ -20,14 +21,24 @@
   text-transform: uppercase;
   cursor: pointer;
   min-width: 180px;
+  border-left: none;
+  border-right: none;
 }
 
 .group-button:first-of-type {
   border-radius: 30px 0 0 30px;
+  border-right: none;
+  border-left: solid;
 }
 
 .group-button:last-of-type {
   border-radius: 0 30px 30px 0;
+  border-left: none;
+  border-right: solid;
+}
+
+.group-button-selected {
+  border-bottom-color: #d53f8c;
 }
 
 button i {

@@ -1,15 +1,15 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import "./Hero.css";
+import "./Hero2.css";
 import Carousel from "./Carousel";
 import Button from "../Shared/Button";
 import ArrowDown from "../Shared/ArrowDown";
 import SocialBox from "../Shared/SocialBox";
 
-function Hero() {
+function Hero2() {
   return (
-    <section className="hero-container">
-      <div className="hero-content">
+    <section className="hero-container2">
+      <div className="hero-content2">
         <SocialBox />
         {/* <img className="hero-img" src="/assets/logo/logo_signature.png" alt="" /> */}
         <h1 className="hero-title">Markéta Synková</h1>
@@ -26,8 +26,8 @@ function Hero() {
         {/* <ArrowDown /> */}
       </div>
 
-      <div className="carousel">
-        <Carousel />
+      <div className="hero-img-container">
+        <img className="hero-img" src="/assets/hero/hero.jpg" alt="" />
       </div>
 
       <div className="top-blur"></div>
@@ -36,4 +36,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Hero2;

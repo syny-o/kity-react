@@ -28,6 +28,13 @@
   }
 }
 
+.gallery-loader-wrapper {
+  margin: auto;
+
+  text-align: center;
+  padding: 6rem 0;
+}
+
 @media only screen and (width >= 1024px) {
   .img-gallery {
     --gallery-items-per-row: 4;

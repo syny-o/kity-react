@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: auto;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .form-group {
@@ -26,12 +26,13 @@
 .form-group input,
 textarea {
   background: transparent;
-  border: 1px solid;
+  border: 2px solid;
   border-color: var(--color-text);
   border-radius: 10px;
   padding: 15px;
   margin: 15px;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: var(--font-m);
   font-family: var(--font-roboto);
   font-weight: 500;
   color: var(--color-text);

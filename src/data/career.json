@@ -1,34 +1,37 @@
 [
   {
-    "role": "Python Developer (Django)",
-    "organisation": "Virtuell",
-    "startDate": "2024",
+    "role": "Focení s vizáží",
+    "organisation": "",
+    "startDate": "Od 4200 Kč",
     "endDate": "",
-    "experiences": ["Tvorba/údržba aplikací ve frameworku Django"],
-    "imageSrc": "/assets/career/virtuell.png"
+    "experiences": [
+      "Profesionální make-up a úprava vlasů",
+      "45 - 80 minut focení",
+      "8 - 14 výsledných upravených fotografií",
+      "Možnost zapůjčení šatů"
+    ],
+    "imageSrc": "/assets/price-list/foceni-s-vizazi.jpg"
   },
   {
-    "role": "Software Tester / Python Engineer",
-    "organisation": "ZF",
-    "startDate": "2015",
+    "role": "Portrétní focení",
+    "organisation": "",
+    "startDate": "Od 2500 Kč",
     "endDate": "",
-    "experiences": ["Testování SWru", "Vývoj nástrojů v jazyce Python"],
-    "imageSrc": "/assets/career/zf.png"
+    "experiences": [
+      "30 - 90 minut focení",
+      "10 - 20 výsledných upravených fotografií",
+      "Možnost zapůjčení šatů"
+    ],
+    "imageSrc": "/assets/price-list/portretni-foceni.jpg"
   },
   {
-    "role": "Technik vývojového centra",
-    "organisation": "EFG",
-    "startDate": "2013",
-    "endDate": "2015",
-    "experiences": ["Testování SW Aktion", "Údržba webových stránek"],
-    "imageSrc": "/assets/career/efg.png"
-  },
-  {
-    "role": "Student",
-    "organisation": "Technická univerzita v Liberci",
-    "startDate": "2007",
-    "endDate": "2013",
-    "experiences": ["Informační technologie"],
-    "imageSrc": "/assets/career/tul.png"
+    "role": "Svatební focení",
+    "organisation": "",
+    "startDate": "Na dotaz",
+    "endDate": "",
+    "experiences": [
+      "Nafocení svatebního dne od ranních příprav po první tanec nebo dle domluvy"
+    ],
+    "imageSrc": "/assets/price-list/svatebni-foceni.jpg"
   }
 ]

@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a className="title" href="/">
-        {/* <img className="logo" src="/assets/nav/signature.png" alt="" /> */}
-        <SocialBox />
+        <img className="logo" src="/assets/logo/logo_signature.png" alt="" />
+        {/* <SocialBox /> */}
       </a>
       <div className="menu">
         <img
@@ -24,13 +24,13 @@ function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#about">O mně</a>
+            <a href="#about">Úvod</a>
           </li>
           <li>
-            <a href="#experiences">Zkušenosti</a>
+            <a href="#experiences">Galerie</a>
           </li>
           <li>
-            <a href="#projcets">Projekty</a>
+            <a href="#projcets">Ceník</a>
           </li>
           <li>
             <a href="#contact" className="color-special">

@@ -2,11 +2,15 @@ import "./GroupButtons.css";
 
 import React from "react";
 
-function GroupButtons({ setPhotosType }) {
+function GroupButtons({ photosTypes, setPhotosType }) {
   return (
     <div className="group-buttons">
       <button
-        className="group-button"
+        className={
+          photosTypes === "portrait-photos/"
+            ? "group-button group-button-selected"
+            : "group-button"
+        }
         href=""
         onClick={(e) => {
           e.preventDefault();
@@ -16,7 +20,11 @@ function GroupButtons({ setPhotosType }) {
         Portrety
       </button>
       <button
-        className="group-button"
+        className={
+          photosTypes === "family-photos/"
+            ? "group-button group-button-selected"
+            : "group-button"
+        }
         href=""
         onClick={(e) => {
           e.preventDefault();
