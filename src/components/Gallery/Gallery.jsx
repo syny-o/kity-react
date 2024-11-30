@@ -25,7 +25,7 @@ const Gallery = () => {
         // console.log(photosType);
       })
       .catch((error) => {
-        alert(error);
+        console.log(error);
       });
   }, [photosType]);
   return (

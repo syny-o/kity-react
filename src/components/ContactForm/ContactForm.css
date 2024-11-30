@@ -12,19 +12,19 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 
-.form-group input {
+/* .form-group input {
   width: 50%;
-}
+} */
 
 .form-group textarea {
   width: 100%;
   margin-bottom: 50px;
 }
 
-.form-group input,
-textarea {
+.form-group textarea {
   background: transparent;
   border: 2px solid;
   border-color: var(--color-text);

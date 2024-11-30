@@ -8,6 +8,7 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import GroupButtons from "./components/Shared/GroupButtons";
+import FormWithValidation from "./components/ContactForm/FormWithValidation";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* <Projects /> */}
         <ContactForm />
         <Footer />
+        <FormWithValidation />
       </div>
     </>
   );

@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
+import Input from "./Input";
+import { FormValidation } from "./FormValidation";
 
 const ContactForm = () => {
-  // useEffect(() => {
-  //   sendFormDataToAPI();
-  // }, []);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState("");
 
   const sendFormDataToAPI = async () => {
     const formData = createFormData();
@@ -22,7 +21,7 @@ const ContactForm = () => {
     ).then((response) => {
       console.log(response.status);
       if (response.status === 400) {
-        alert("error");
+        console.log("error");
       } else {
         setName("");
         setEmail("");
@@ -41,34 +40,47 @@ const ContactForm = () => {
     return formData;
   };
 
+  const validateInputs = () => {
+    if (name != "") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const result = validateInputs();
+
+    // console.log(errors);
+    // setErrors(FormValidation(name, email, message));
+    // console.log(errors);
+    // sendFormDataToAPI();
+  };
+
   return (
     <section className="container">
       <h2 className="section-title">Kontakt</h2>
       <form className="contact-form">
         <div className="form-group">
-          {/* <label htmlFor="name">Name:</label> */}
-          <input
-            type="text"
-            id="name"
-            className="form-control name-input"
-            placeholder="Jméno"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+          <Input
+            type={"text"}
+            placeholder={"Jmeno"}
+            attr={name}
+            setAttr={setName}
+            setErrors={setErrors}
+            errors={errors}
           />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            className="form-control email-input"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+          <Input
+            type={"email"}
+            placeholder={"Email"}
+            attr={email}
+            setAttr={setEmail}
+            setErrors={setErrors}
           />
         </div>
 
-        {/* <label htmlFor="email">Email:</label> */}
-
         <div className="form-group">
-          {/* <label htmlFor="message">Message:</label> */}
           <textarea
             id="message"
             className="form-control message-input"
@@ -80,8 +92,7 @@ const ContactForm = () => {
         <Button
           text={"Odeslat"}
           onClick={(e) => {
-            e.preventDefault();
-            sendFormDataToAPI();
+            handleSubmit(e);
           }}
         />
       </form>
