@@ -1,101 +1,147 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
+
+import { API_URL } from "../../constants/global";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
-import Input from "./Input";
-import { FormValidation } from "./FormValidation";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({ email: "", message: "" });
+  const [status, setStatus] = useState("");
 
-  const sendFormDataToAPI = async () => {
-    const formData = createFormData();
-    const response = await fetch(
-      "http://localhost:8000/my_app/api/contact-form/",
-      {
-        method: "POST",
-        body: formData,
+  const validateField = (field, value) => {
+    let error = "";
+    if (field === "email") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+      if (!emailRegex.test(value)) {
+        error = true;
       }
-    ).then((response) => {
-      console.log(response.status);
-      if (response.status === 400) {
-        console.log("error");
-      } else {
-        setName("");
-        setEmail("");
-        setMessage("");
+    } else if (field === "message") {
+      if (value.trim() === "") {
+        error = true;
       }
+    }
+    return error;
+  };
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+
+    // Update form data
+    setFormData({
+      ...formData,
+      [id]: value,
     });
 
-    return response;
-  };
-
-  const createFormData = () => {
-    const formData = new FormData();
-    formData.set("name", name);
-    formData.set("email", email);
-    formData.set("message", message);
-    return formData;
-  };
-
-  const validateInputs = () => {
-    if (name != "") {
-      return true;
-    } else {
-      return false;
+    // Validate the field
+    if (id === "email" || id === "message") {
+      const error = validateField(id, value);
+      setErrors({
+        ...errors,
+        [id]: error,
+      });
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const result = validateInputs();
+    setStatus("");
 
-    // console.log(errors);
-    // setErrors(FormValidation(name, email, message));
-    // console.log(errors);
-    // sendFormDataToAPI();
+    // Validate all fields
+    const emailError = validateField("email", formData.email);
+    const messageError = validateField("message", formData.message);
+
+    setErrors({
+      email: emailError,
+      message: messageError,
+    });
+
+    if (!emailError && !messageError) {
+      sendFormDataToApi();
+    }
+  };
+
+  const sendFormDataToApi = async () => {
+    setStatus("Sending...");
+
+    try {
+      const fData = new FormData();
+      fData.set("name", formData.name);
+      fData.set("email", formData.email);
+      fData.set("message", formData.message);
+      console.log(JSON.stringify(formData));
+      const response = await fetch(API_URL, {
+        method: "POST",
+        // headers: { "Content-Type": "application/json" },
+        // body: JSON.stringify(formData),
+        body: fData,
+      });
+
+      if (response.ok) {
+        setStatus("Odesláno");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Error");
+      }
+    } catch (error) {
+      setStatus("Error");
+    }
   };
 
   return (
-    <section className="container">
+    <section id="contact" className="container">
       <h2 className="section-title">Kontakt</h2>
-      <form className="contact-form">
-        <div className="form-group">
-          <Input
-            type={"text"}
-            placeholder={"Jmeno"}
-            attr={name}
-            setAttr={setName}
-            setErrors={setErrors}
-            errors={errors}
-          />
-          <Input
-            type={"email"}
-            placeholder={"Email"}
-            attr={email}
-            setAttr={setEmail}
-            setErrors={setErrors}
-          />
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-row">
+          <div className="form-field-wrapper">
+            <input
+              type="text"
+              id="name"
+              className="form-input"
+              placeholder={"Jméno"}
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-field-wrapper">
+            <input
+              type="email"
+              id="email"
+              className="form-input"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && (
+              <span className="form-error">{"Nesprávný formát"}</span>
+            )}
+          </div>
         </div>
 
-        <div className="form-group">
-          <textarea
-            id="message"
-            className="form-control message-input"
-            placeholder="Zpráva"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
+        <div className="form-row">
+          <div className="form-field-wrapper">
+            <textarea
+              id="message"
+              className="form-control message-input"
+              placeholder="Zpráva"
+              value={formData.message}
+              onChange={handleChange}
+              rows={6}
+            ></textarea>
+            {errors.message && (
+              <span className="form-error">Napište zprávu</span>
+            )}
+          </div>
         </div>
-        <Button
-          text={"Odeslat"}
-          onClick={(e) => {
-            handleSubmit(e);
-          }}
-        />
+
+        <Button text="Odeslat" href={""} type={"submit"} />
       </form>
+      <p className="form-submit-status">{status}</p>
     </section>
   );
 };

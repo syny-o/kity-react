@@ -1,3 +1,7 @@
+#contact {
+  position: relative;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -5,54 +9,110 @@
   align-items: center;
   /* max-width: 1280px; */
   margin: auto;
-  /* margin-bottom: 120px; */
 }
-
+/* 
 .form-group {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  justify-content: stretch;
+  align-items: center;
+  gap: 10px;
 }
-
-/* .form-group input {
-  width: 50%;
-} */
 
 .form-group textarea {
   width: 100%;
-  margin-bottom: 50px;
 }
 
-.form-group textarea {
+.form-group input,
+textarea {
   background: transparent;
   border: 2px solid;
-  border-color: var(--color-text);
+  border-color: var(--color-primary);
   border-radius: 10px;
   padding: 15px;
   margin: 15px;
-  /* font-size: 25px; */
-  font-size: var(--font-m);
+  font-size: 25px;
   font-family: var(--font-roboto);
   font-weight: 500;
   color: var(--color-text);
+
 }
 
-@media screen and (max-width: 830px) {
-  .contact-form {
-    margin-bottom: 0px;
-  }
+.form-field-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
 
-  .form-group {
+.form-field-wrapper input {
+  width: 100%;
+} */
+
+.form-error {
+  position: absolute;
+  color: var(--color-special);
+  right: 5px;
+  top: 5px;
+  font-size: var(--font-sm);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  width: 100%;
+}
+
+.form-row .form-field-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 45%;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form-row textarea {
+  flex: 1;
+  /* min-width: 90%; */
+}
+
+/* textarea {
+  resize: vertical;
+} */
+
+input,
+textarea {
+  background: transparent;
+  border: 2px solid;
+  border-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 15px;
+
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  color: var(--color-text);
+  width: 100%;
+}
+
+.form-submit-status {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: var(--color-special); */
+  color: var(--color-special);
+  bottom: -100px;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
     flex-direction: column;
   }
 
-  .form-group input,
-  textarea {
-    margin: 10px 0;
-  }
-
-  .form-group input {
-    width: 100%;
-  }
+  /* .form-row .form-input {
+    min-width: 100%;
+  } */
 }
