@@ -3,14 +3,14 @@
   display: flex;
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: 25px;
-  margin-top: 80px;
-  margin-bottom: 200px;
+  /* margin-top: 80px; */
+  /* margin-bottom: 200px; */
   /* margin-left: 10%;
   margin-right: 10%; */
-  /* height: 100vh; */
+  height: 100vh;
   z-index: 1;
 }
 
@@ -21,7 +21,6 @@
   justify-content: center;
   color: var(--color-text);
   z-index: 1;
-  margin-top: 120px;
 }
 
 .hero-img {

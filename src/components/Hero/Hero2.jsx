@@ -14,7 +14,7 @@ function Hero2() {
         {/* <img className="hero-img" src="/assets/logo/logo_signature.png" alt="" /> */}
         <h1 className="hero-title">Markéta Synková</h1>
         <p className="hero-subtitle">Fotografka</p>
-        <p className="hero-technologies">
+        <p className="hero-services">
           <ReactTyped
             strings={["Portréty", "Rodiny a děti", "Svatební focení"]}
             typeSpeed={100}
@@ -29,9 +29,6 @@ function Hero2() {
       <div className="hero-img-container">
         <img className="hero-img" src="/assets/hero/hero.jpg" alt="" />
       </div>
-
-      <div className="top-blur"></div>
-      {/* <div className="bottom-blur"></div> */}
     </section>
   );
 }

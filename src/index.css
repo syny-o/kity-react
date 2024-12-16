@@ -4,7 +4,7 @@
 
   /* Colors */
   --color-text: #fff;
-  --color-primary: #576cbc;
+  --color-primary: #fff;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
   --color-bg: #2d0426;
@@ -19,9 +19,10 @@
 
   /* Fonts */
   --font-roboto: "Roboto";
-  --font-xl: 4.5rem;
+  --font-xl: 4.2rem;
   --font-l: 2.5rem;
   --font-m: 1.5rem;
+  --font-sm: 1.2rem;
 }
 
 * {
@@ -31,6 +32,10 @@
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   /* font-family: "Roboto"; */
   /* color: var(--color-text); */
+}
+
+* {
+  font-size: var(--font-m);
 }
 
 .App {
@@ -63,7 +68,7 @@
   background-color: #2d0426;
 }
 
-.top-blur {
+/* .top-blur {
   position: absolute;
   width: 40vw;
   height: 40vw;
@@ -75,25 +80,21 @@
   background: rgba(89, 25, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
-}
+} */
 
-.bottom-blur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
 
-@media screen and (max-width: 830px) {
   .container {
     max-width: 95%;
     margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  :root {
+    font-size: 14px;
   }
 }

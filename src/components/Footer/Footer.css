@@ -1,6 +1,6 @@
 .footer {
   color: var(--color-text);
-  padding: 50px;
+  padding: 20px 50px;
   margin: auto;
   margin-top: 60px;
   display: flex;
@@ -11,15 +11,22 @@
   max-width: 1400px;
 }
 
+.footer-logo {
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
 .footer-text {
   font-size: var(--font-m);
   color: rgb(200, 200, 200);
   padding: 1rem;
   margin-bottom: 1rem;
-}
-
-.footer-logo {
-  padding: 1rem;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 830px) {

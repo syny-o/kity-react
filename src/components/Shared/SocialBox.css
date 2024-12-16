@@ -13,8 +13,11 @@
   justify-content: center;
   width: 60px;
   height: 60px;
+  width: 3.8rem;
+  height: 3.8rem;
 }
 
 .social-image-container img {
   width: 30px;
+  width: 2rem;
 }
