@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { API_URL } from "../../constants/global";
+import { API_URL_CONTACT_FORM } from "../../constants/global";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
 
@@ -74,7 +74,7 @@ const ContactForm = () => {
       fData.set("email", formData.email);
       fData.set("message", formData.message);
       console.log(JSON.stringify(formData));
-      const response = await fetch(API_URL, {
+      const response = await fetch(API_URL_CONTACT_FORM, {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
         // body: JSON.stringify(formData),

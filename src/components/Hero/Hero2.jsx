@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import { FaChevronDown } from "react-icons/fa";
 import "./Hero2.css";
 import Carousel from "./Carousel";
 import Button from "../Shared/Button";
@@ -22,7 +23,7 @@ function Hero2() {
           />
         </p>
 
-        <Button text={"Moje práce"} href={"#"} />
+        <Button text={"Moje práce"} href={"#"} icon={<FaChevronDown />} />
         {/* <ArrowDown /> */}
       </div>
 

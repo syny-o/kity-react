@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-
-import "./Gallery.css";
-import GroupButtons from "../Shared/GroupButtons";
 import { PulseLoader } from "react-spinners";
 
-const BASE_URL = "http://localhost:8000/";
-const API_URL = "http://localhost:8000/my_app/api/";
+import { API_URL, BASE_URL } from "../../constants/global";
+import "./Gallery.css";
+import GroupButtons from "../Shared/GroupButtons";
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);

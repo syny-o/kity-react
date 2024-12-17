@@ -20,7 +20,7 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   cursor: pointer;
-  min-width: 180px;
+  min-width: 250px;
   border-left: none;
   border-right: none;
 }
@@ -64,6 +64,11 @@ button i {
 .multi-button:hover button:hover i {
   color: #fed7e2;
   transform: rotate(-10deg);
+}
+
+svg {
+  padding-top: 7px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 830px) {

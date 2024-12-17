@@ -1,6 +1,6 @@
-import "./GroupButtons.css";
+import { FaUser, FaBaby, FaUserFriends, FaChild } from "react-icons/fa";
 
-import React from "react";
+import "./GroupButtons.css";
 
 function GroupButtons({ photosTypes, setPhotosType }) {
   return (
@@ -17,7 +17,8 @@ function GroupButtons({ photosTypes, setPhotosType }) {
           setPhotosType("portrait-photos/");
         }}
       >
-        Portrety
+        <FaUser />
+        Portréty
       </button>
       <button
         className={
@@ -31,10 +32,17 @@ function GroupButtons({ photosTypes, setPhotosType }) {
           setPhotosType("family-photos/");
         }}
       >
-        Rodinne
+        <FaChild />
+        Rodiny
       </button>
-      <button className="group-button">Detske</button>
-      <button className="group-button">Svatby</button>
+      <button className="group-button">
+        <FaBaby />
+        Děti
+      </button>
+      <button className="group-button">
+        <FaUserFriends />
+        Svatby
+      </button>
     </div>
   );
 }
