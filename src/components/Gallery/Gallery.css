@@ -1,7 +1,7 @@
 :root {
   --gallery-items-per-row: 1;
-  --gallery-item-border-radius: 0.4em;
-  --gallery-gap: 1.5em;
+  --gallery-item-border-radius: 0.4rem;
+  --gallery-gap: 1rem;
 }
 
 .img-gallery {
@@ -16,15 +16,6 @@
     /* aspect-ratio: 7 / 6; */
     object-fit: cover;
     border-radius: var(--gallery-item-border-radius);
-
-    figure {
-      margin: 0;
-    }
-
-    figcaption {
-      margin-top: 0.5rem;
-      font-weight: bold;
-    }
   }
 }
 
@@ -48,5 +39,11 @@
 @media only screen and (540px < width < 768px) {
   .img-gallery {
     --gallery-items-per-row: 3;
+  }
+}
+
+@media only screen and (width < 768px) {
+  .img-gallery__item img {
+    width: 100%;
   }
 }

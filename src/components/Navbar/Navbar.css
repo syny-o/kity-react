@@ -7,8 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 0 0 100% 0;
   background-color: var(--color-bg);
   border-right: 3px solid white;
@@ -28,14 +28,14 @@
 .menu-btn {
   cursor: pointer;
   position: absolute;
-  left: 40px;
-  top: 60px;
+  left: 30px;
+  top: 45px;
 }
 
 .menu {
   position: absolute;
   left: 0;
-  top: 150px;
+  top: 130px;
   display: flex;
   flex-direction: column;
   gap: 45px;
@@ -65,7 +65,7 @@
 
   .menu-btn-box-open {
     width: 300px;
-    height: 800px;
+    height: 660px;
   }
 
   .menu-btn {

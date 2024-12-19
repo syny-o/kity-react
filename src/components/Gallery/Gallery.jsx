@@ -45,10 +45,10 @@ const Gallery = () => {
         {!loading && (
           <div className="img-gallery">
             {photos.map((photo) => (
-              <div className="img-gallery__item">
+              <div className="img-gallery__item" key={photo.id}>
                 <figure>
                   <img
-                    key={photo.id}
+                    // key={photo.id}
                     src={BASE_URL + photo.image}
                     alt={photo.title}
                     width={300}
