@@ -11,7 +11,6 @@ function GroupButtons({ photosTypes, setPhotosType }) {
             ? "group-button group-button-selected"
             : "group-button"
         }
-        href=""
         onClick={(e) => {
           e.preventDefault();
           setPhotosType("portrait-photos/");
@@ -26,7 +25,6 @@ function GroupButtons({ photosTypes, setPhotosType }) {
             ? "group-button group-button-selected"
             : "group-button"
         }
-        href=""
         onClick={(e) => {
           e.preventDefault();
           setPhotosType("family-photos/");
@@ -35,9 +33,19 @@ function GroupButtons({ photosTypes, setPhotosType }) {
         <FaChild />
         Rodiny
       </button>
-      <button className="group-button">
+      <button
+        className={
+          photosTypes === "pregnant-photos/"
+            ? "group-button group-button-selected"
+            : "group-button"
+        }
+        onClick={(e) => {
+          e.preventDefault();
+          setPhotosType("pregnant-photos/");
+        }}
+      >
         <FaBaby />
-        Děti
+        Těhotné
       </button>
       <button className="group-button">
         <FaUserFriends />
