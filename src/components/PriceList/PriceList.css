@@ -27,6 +27,7 @@
 .career-item img {
   width: 100%;
   border-radius: 10px;
+  display: none;
 }
 
 .career-item-details {
@@ -45,6 +46,7 @@
   font-weight: bold;
   text-transform: uppercase;
   font-weight: normal;
+  color: var(--color-special);
 }
 
 .career-item-details p {

@@ -1,15 +1,14 @@
 import React from "react";
-import "./Experience.css";
-import career from "../../data/career.json";
-import skills from "../../data/skills.json";
+import "./PriceList.css";
+import priceList from "../../data/priceList.json";
 
-function Experience() {
+function PriceList() {
   return (
     <section className="container" id="experience">
       <h2 className="section-title">Ceník</h2>
 
       <ul className="career">
-        {career.map((careerItem, id) => {
+        {priceList.map((careerItem, id) => {
           return (
             <li key={id} className="career-item">
               <img
@@ -33,4 +32,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default PriceList;

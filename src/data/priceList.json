@@ -10,7 +10,7 @@
       "8 - 14 výsledných upravených fotografií",
       "Možnost zapůjčení šatů"
     ],
-    "imageSrc": "/assets/price-list/foceni-s-vizazi.jpg"
+    "imageSrc": "/assets/testimonials/1BB.jpg"
   },
   {
     "role": "Portrétní",
@@ -22,7 +22,7 @@
       "10 - 20 výsledných upravených fotografií",
       "Možnost zapůjčení šatů"
     ],
-    "imageSrc": "/assets/price-list/portretni-foceni.jpg"
+    "imageSrc": "/assets/testimonials/2NF.jpg"
   },
   {
     "role": "Svatební",
@@ -32,6 +32,6 @@
     "experiences": [
       "Nafocení svatebního dne od ranních příprav po první tanec nebo dle domluvy"
     ],
-    "imageSrc": "/assets/price-list/svatebni-foceni.jpg"
+    "imageSrc": "/assets/testimonials/3AG.jpg"
   }
 ]
