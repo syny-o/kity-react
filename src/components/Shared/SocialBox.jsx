@@ -1,18 +1,27 @@
-import React from "react";
+import { FaFacebookF, FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import "./SocialBox.css";
 
 function SocialBox() {
   return (
     <div className="social">
-      <div className="social-image-container">
-        <img src="/assets/social/mail.png" alt="" />
-      </div>
-      <div className="social-image-container">
-        <img src="/assets/social/github.png" alt="" />
-      </div>
-      <div className="social-image-container">
-        <img src="/assets/social/linkedin.png" alt="" />
-      </div>
+      <a href="https://www.facebook.com/marsy.photo/" target="_blank">
+        <div className="social-image-container">
+          <FaFacebookF />
+        </div>
+      </a>
+      <a
+        href="https://www.instagram.com/marketa.synkova.fotografka/"
+        target="_blank"
+      >
+        <div className="social-image-container">
+          <FaInstagram />
+        </div>
+      </a>
+      <a href="marketa.synkova@gmail.com">
+        <div className="social-image-container">
+          <FaRegEnvelope />
+        </div>
+      </a>
     </div>
   );
 }

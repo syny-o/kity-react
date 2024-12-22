@@ -27,7 +27,7 @@ const Gallery = () => {
       });
   }, [photosType]);
   return (
-    <section className="container">
+    <section className="container" id="gallery">
       <h2 className="section-title">Galerie</h2>
       <div className="gallery">
         <GroupButtons photosTypes={photosType} setPhotosType={setPhotosType} />

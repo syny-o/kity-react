@@ -22,7 +22,7 @@ function Hero() {
           />
         </p>
 
-        <Button text={"Moje práce"} href={"#"} />
+        <Button text={"Moje práce"} onclick="location.href='#gallery'" />
         {/* <ArrowDown /> */}
       </div>
 

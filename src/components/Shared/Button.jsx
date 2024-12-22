@@ -2,16 +2,10 @@ import React from "react";
 import "./Button.css";
 
 function Button({ text, href, type, icon }) {
-  const handleClick = () => {
-    if (type !== "submit") {
-      window.open(href, "_blank");
-    }
-  };
-
   return (
-    <button className="btn" onClick={handleClick} type={type}>
+    <a className="btn" type={type} href={href}>
       {icon} {text}
-    </button>
+    </a>
   );
 }
 

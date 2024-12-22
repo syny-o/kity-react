@@ -23,7 +23,11 @@ function Hero2() {
           />
         </p>
 
-        <Button text={"Moje práce"} href={"#"} icon={<FaChevronDown />} />
+        <Button
+          text={"Moje práce"}
+          href={"#gallery"}
+          icon={<FaChevronDown />}
+        />
         {/* <ArrowDown /> */}
       </div>
 

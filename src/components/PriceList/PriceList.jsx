@@ -6,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 function PriceList() {
   return (
-    <section className="container" id="experience">
+    <section className="container" id="price-list">
       <h2 className="section-title">Napsali o mně</h2>
 
       <ul className="career">
