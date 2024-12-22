@@ -59,7 +59,7 @@ textarea {
 .form-row {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 10px; */
+  gap: 20px;
   width: 100%;
 }
 
@@ -110,6 +110,7 @@ textarea {
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;
+    gap: 0px;
   }
 
   /* .form-row .form-input {
