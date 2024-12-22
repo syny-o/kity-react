@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* gap: 30px; */
   background: #19376d;
   background: var(--color-gradient);
@@ -40,9 +41,9 @@
   padding: 2rem;
 }
 
-.career-item-details h3 {
+.career-item-details svg {
   /* font-size: 35px; */
-  font-size: var(--font-m);
+  font-size: var(--font-l);
   font-weight: bold;
   text-transform: uppercase;
   font-weight: normal;

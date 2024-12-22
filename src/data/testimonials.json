@@ -1,0 +1,17 @@
+[
+  {
+    "customerName": "Barbora Bernardová",
+    "customerReview": "Moc bych chtěla poděkovat Markétce za krásné fotky. Super přístup a bleskové dodání :) Určitě to není poslední focení, které se u této usměvavé slečny konalo. Z fotek jsem nadšená",
+    "customerImage": "/assets/testimonials/1BB.jpg"
+  },
+  {
+    "customerName": "Nikol Farová",
+    "customerReview": "Pokaždé pohodové focení a fantastické fotky! Naprostá spokojenost, Markét je prostě profík:)",
+    "customerImage": "/assets/testimonials/2NF.jpg"
+  },
+  {
+    "customerName": "Anežka Glitznerová",
+    "customerReview": "Mít v tak malém městě možnost takhle profesionálního focení je sen! Slečna je velmi příjemná, uvolněná a fotky jsou naprosto dokonalé! Máme za sebou už druhé Vánoční focení a i naši krátkou tajnou svatbu, pokaždé fotky byly perfektní. Mohu každému jen a jen doporučit :)",
+    "customerImage": "/assets/testimonials/3AG.jpg"
+  }
+]
