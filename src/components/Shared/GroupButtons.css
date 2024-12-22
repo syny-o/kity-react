@@ -68,9 +68,15 @@ button i {
   transform: rotate(-10deg);
 }
 
-svg {
-  padding-top: 7px;
+.group-button svg {
+  /* padding-top: 7px; */
+  margin-top: 3px;
   margin-right: 10px;
+  font-size: var(--font-m);
+}
+
+.group-button {
+  font-size: var(--font-m);
 }
 
 @media screen and (max-width: 830px) {
