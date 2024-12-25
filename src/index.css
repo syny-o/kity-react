@@ -48,7 +48,7 @@
 
 .section-title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: var(--font-l);
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -88,6 +88,11 @@
   .container {
     max-width: 95%;
     margin-top: 0px !important;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+    margin-top: 100px;
   }
 }
 

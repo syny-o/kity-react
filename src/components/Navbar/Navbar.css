@@ -63,8 +63,8 @@
 
 @media screen and (max-width: 830px) {
   .menu-btn-box {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .menu-btn-box-open {
@@ -74,6 +74,6 @@
 
   .menu-btn {
     left: 20px;
-    top: 30px;
+    top: 20px;
   }
 }
