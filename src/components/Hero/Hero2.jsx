@@ -1,10 +1,7 @@
-import React from "react";
+import "./Hero2.css";
 import { ReactTyped } from "react-typed";
 import { FaChevronDown } from "react-icons/fa";
-import "./Hero2.css";
-import Carousel from "./Carousel";
 import Button from "../Shared/Button";
-import ArrowDown from "../Shared/ArrowDown";
 import SocialBox from "../Shared/SocialBox";
 
 function Hero2() {
@@ -25,7 +22,7 @@ function Hero2() {
 
         <Button
           text={"Moje práce"}
-          href={"#gallery"}
+          targetId={"gallery"}
           icon={<FaChevronDown />}
         />
         {/* <ArrowDown /> */}
