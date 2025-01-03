@@ -6,7 +6,7 @@ import SocialBox from "../Shared/SocialBox";
 
 function Hero2() {
   return (
-    <section className="hero-container2">
+    <section className="hero-container2" id="hero">
       <div className="hero-content2">
         <SocialBox />
         {/* <img className="hero-img" src="/assets/logo/logo_signature.png" alt="" /> */}
