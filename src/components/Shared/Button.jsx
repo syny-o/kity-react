@@ -1,11 +1,20 @@
 import React from "react";
 import "./Button.css";
 
-function Button({ text, href, type, icon }) {
+function Button({ text, type, icon, targetId }) {
+  const handleClick = () => {
+    if (targetId) {
+      const section = document.getElementById(targetId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
-    <a className="btn" type={type} href={href}>
+    <button className="btn" onClick={handleClick} type={type}>
       {icon} {text}
-    </a>
+    </button>
   );
 }
 
