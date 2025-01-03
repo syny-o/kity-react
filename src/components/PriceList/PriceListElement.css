@@ -1,4 +1,4 @@
-.testimonials-item {
+.price-list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,15 +9,15 @@
   /* height: 200px; */
 }
 
-/* .testimonials-item:first-of-type {
+/* .price-list-item:first-of-type {
   background-color: var(--color-special);
 } */
 
-.testimonials-item:hover {
+.price-list-item:hover {
   background-color: var(--color-special);
 }
 
-.testimonials-item .img-wrapper {
+.price-list-item .img-wrapper {
   width: 8rem;
   height: 8rem;
   min-width: 8rem;
@@ -29,27 +29,27 @@
   justify-content: center;
 }
 
-.testimonials-item svg {
+.price-list-item svg {
   font-size: var(--font-l);
   padding: 0;
   margin: 0;
 }
 
-.testimonials-item-details {
+.price-list-item-details {
   font-family: var(--font-roboto);
 }
 
-.testimonials-item-details h3 {
+.price-list-item-details h3 {
   font-weight: bold;
   color: var(--color-bg);
 }
 
-.testimonials-item-details p {
+.price-list-item-details p {
   font-weight: bold;
   color: var(--color-bg);
 }
 
-.testimonials-item-details ul {
+.price-list-item-details ul {
   margin-top: 10px;
   margin-bottom: 10px;
   list-style-position: inside;
@@ -59,12 +59,12 @@
   color: rgb(200, 200, 200);
 }
 
-.testimonials-item-details li {
+.price-list-item-details li {
   padding: 3px;
 }
 
 @media screen and (max-width: 830px) {
-  .testimonials-item {
+  .price-list-item {
     flex-direction: column;
     align-items: center;
     justify-content: center;

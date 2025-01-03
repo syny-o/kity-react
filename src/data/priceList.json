@@ -1,37 +1,28 @@
 [
   {
     "role": "S vizáží",
-    "organisation": "",
-    "startDate": "Od 4200 Kč",
-    "endDate": "",
-    "experiences": [
+    "price": "Od 4200 Kč",
+    "items": [
       "Profesionální make-up a úprava vlasů",
       "45 - 80 minut focení",
       "8 - 14 výsledných upravených fotografií",
       "Možnost zapůjčení šatů"
-    ],
-    "imageSrc": "/assets/testimonials/1BB.jpg"
+    ]
   },
   {
     "role": "Portrétní",
-    "organisation": "",
-    "startDate": "Od 2500 Kč",
-    "endDate": "",
-    "experiences": [
+    "price": "Od 2500 Kč",
+    "items": [
       "30 - 90 minut focení",
       "10 - 20 výsledných upravených fotografií",
       "Možnost zapůjčení šatů"
-    ],
-    "imageSrc": "/assets/testimonials/2NF.jpg"
+    ]
   },
   {
     "role": "Svatební",
-    "organisation": "",
-    "startDate": "Na dotaz",
-    "endDate": "",
-    "experiences": [
+    "price": "Na dotaz",
+    "items": [
       "Nafocení svatebního dne od ranních příprav po první tanec nebo dle domluvy"
-    ],
-    "imageSrc": "/assets/testimonials/3AG.jpg"
+    ]
   }
 ]

@@ -25,7 +25,9 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <div className="menu">
-          <Avatar />
+          <div className="avatar-container">
+            <Avatar imageSrc={"/assets/avatar/avatar.png"} />
+          </div>
           <ul
             // className={menuOpen ? "menu-items menu-open" : "menu-items"}
             className="menu-items"

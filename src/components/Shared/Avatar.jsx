@@ -1,9 +1,9 @@
 import "./Avatar.css";
 
-function Avatar() {
+function Avatar({ imageSrc }) {
   return (
     <div className="avatar-overlay">
-      <img className="avatar-image" src="/assets/avatar/avatar.png" alt="" />
+      <img className="avatar-image" src={imageSrc} alt="" />
     </div>
   );
 }

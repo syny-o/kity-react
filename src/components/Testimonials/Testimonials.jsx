@@ -1,16 +1,32 @@
-import React from "react";
 import "./Testimonials.css";
-import TestimonialsElement from "./TestimonialsElement";
-import priceListData from "../../data/priceList.json";
+import testimonialsData from "../../data/testimonials.json";
+import { FaQuoteRight } from "react-icons/fa";
+import Avatar from "../Shared/Avatar";
 
 function Testimonials() {
   return (
-    <section className="container" id="testimonials">
-      <h2 className="section-title">Ceník</h2>
+    <section className="container" id="price-list">
+      <h2 className="section-title">Napsali o mně</h2>
+
       <ul className="testimonials">
-        {priceListData.map((careerItem, id) => (
-          <TestimonialsElement key={id} careerItem={careerItem} />
-        ))}
+        {testimonialsData.map((oneCustomer, id) => {
+          return (
+            <li key={id} className="testimonials-item">
+              {/* <img src={oneCustomer.customerImage} alt="" /> */}
+
+              <div className="testimonials-item-details">
+                <div className="image-container">
+                  <Avatar imageSrc={oneCustomer.customerImage} />
+                </div>
+                <h3>
+                  <FaQuoteRight />
+                </h3>
+                <ul>{oneCustomer.customerReview}</ul>
+                <p className="color-special">{`${oneCustomer.customerName}`}</p>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
