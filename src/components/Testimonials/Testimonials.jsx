@@ -5,7 +5,7 @@ import Avatar from "../Shared/Avatar";
 
 function Testimonials() {
   return (
-    <section className="container" id="price-list">
+    <section className="container" id="testimonials">
       <h2 className="section-title">Napsali o mně</h2>
 
       <ul className="testimonials">
