@@ -21,7 +21,7 @@ const ContactForm = () => {
       if (!emailRegex.test(value)) {
         error = true;
       }
-    } else if (field === "message") {
+    } else if (field === "message" || field === "name") {
       if (value.trim() === "") {
         error = true;
       }
@@ -54,14 +54,16 @@ const ContactForm = () => {
 
     // Validate all fields
     const emailError = validateField("email", formData.email);
+    const nameError = validateField("name", formData.name);
     const messageError = validateField("message", formData.message);
 
     setErrors({
       email: emailError,
+      name: nameError,
       message: messageError,
     });
 
-    if (!emailError && !messageError) {
+    if (!emailError && !messageError && !nameError) {
       sendFormDataToApi();
     }
   };
@@ -107,6 +109,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
             />
+            {errors.name && <span className="form-error">Vyplňte jméno</span>}
           </div>
 
           <div className="form-field-wrapper">
