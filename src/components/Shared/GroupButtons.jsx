@@ -47,7 +47,17 @@ function GroupButtons({ photosTypes, setPhotosType }) {
         <FaBaby />
         Těhotné
       </button>
-      <button className="group-button">
+      <button
+        className={
+          photosTypes === "wedding-photos/"
+            ? "group-button group-button-selected"
+            : "group-button"
+        }
+        onClick={(e) => {
+          e.preventDefault();
+          setPhotosType("wedding-photos/");
+        }}
+      >
         <FaUserFriends />
         Svatby
       </button>
