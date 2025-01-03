@@ -21,12 +21,8 @@
   background-color: var(--color-1);
 }
 
-.social-image-container img {
-  width: 30px;
-  width: 2rem;
-}
-
 .social-image-container svg {
   color: black;
   font-size: var(--font-l);
+  padding: 5px;
 }
