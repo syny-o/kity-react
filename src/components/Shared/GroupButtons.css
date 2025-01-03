@@ -79,7 +79,7 @@ button i {
   font-size: var(--font-m);
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1000px) {
   .group-button {
     border-left: solid;
     border-right: solid;
