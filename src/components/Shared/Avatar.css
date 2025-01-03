@@ -1,0 +1,55 @@
+.avatar-overlay {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* border: 2px solid var(--color-special); */
+  border: 2px solid var(--color-text);
+  margin-left: 10px;
+  background-color: var(--color-special);
+
+  /* ANIMATION */
+  animation-name: border-color-changing;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* @keyframes border-color-changing {
+  0% {
+    border-color: var(--color-special);
+  }
+  50% {
+    border-color: var(--color-2);
+  }
+  100% {
+    border-color: var(--color-special);
+  }
+} */
+
+.avatar-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--color-special); */
+  /* opacity: 0.1; */
+  pointer-events: none;
+}
+
+.avatar-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .avatar-overlay {
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+  }
+}

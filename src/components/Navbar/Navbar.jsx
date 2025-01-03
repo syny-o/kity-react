@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { FaAngleUp } from "react-icons/fa";
 
 import "./Navbar.css";
-import SocialBox from "../Shared/SocialBox";
+// import SocialBox from "../Shared/SocialBox";
+import Avatar from "../Shared/Avatar";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +25,7 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <div className="menu">
+          <Avatar />
           <ul
             // className={menuOpen ? "menu-items menu-open" : "menu-items"}
             className="menu-items"
@@ -40,8 +43,10 @@ function Navbar() {
             <li>
               <a href="#contact">Kontakt</a>
             </li>
+            <a className="go-to-top" href="#hero">
+              <FaAngleUp />
+            </a>
           </ul>
-          <SocialBox />
         </div>
       </div>
     </nav>
