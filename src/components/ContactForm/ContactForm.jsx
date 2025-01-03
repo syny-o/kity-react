@@ -3,6 +3,7 @@ import { useState } from "react";
 import { API_URL_CONTACT_FORM } from "../../constants/global";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
+import { FaChevronRight, FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -139,7 +140,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <Button text="Odeslat" href={""} type={"submit"} />
+        <Button text="Odeslat" type={"submit"} icon={<FaCheck />} />
       </form>
       <p className="form-submit-status">{status}</p>
     </section>
