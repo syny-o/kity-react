@@ -21,12 +21,10 @@
   background-color: var(--color-special);
 }
 
-.icon {
-  position: relative;
-  top: 3px;
-  margin-right: 3px;
-}
-
 .btn svg {
-  padding-top: 6px;
+  position: relative;
+  top: 4px;
+  margin-top: 3px;
+  margin-right: 10px;
+  font-size: var(--font-m);
 }
