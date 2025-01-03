@@ -12,7 +12,7 @@ const ContactForm = () => {
     message: "",
   });
   const [errors, setErrors] = useState({ email: "", message: "" });
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(null);
 
   const validateField = (field, value) => {
     let error = "";
@@ -67,7 +67,7 @@ const ContactForm = () => {
   };
 
   const sendFormDataToApi = async () => {
-    setStatus("Sending...");
+    setStatus("Odesílám...");
 
     try {
       const fData = new FormData();
@@ -83,13 +83,13 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        setStatus("Odesláno");
+        setStatus("Odesláno, děkuji za zprávu.");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("Error");
+        setStatus("Chyba, zkuste to prosím znovu.");
       }
     } catch (error) {
-      setStatus("Error");
+      setStatus("Chyba, zkuste to prosím znovu.");
     }
   };
 
@@ -142,7 +142,7 @@ const ContactForm = () => {
 
         <Button text="Odeslat" type={"submit"} icon={<FaCheck />} />
       </form>
-      <p className="form-submit-status">{status}</p>
+      {status && <p className="form-submit-status">{status}</p>}
     </section>
   );
 };
