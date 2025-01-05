@@ -10,10 +10,7 @@ function PriceListElement({ priceListItem, id }) {
         {priceListItem.role === "Svatební" && <FaUserFriends />}
       </div>
       <div className="price-list-item-details">
-        <h3>
-          {priceListItem.role}
-          <span className="">{` ${priceListItem.organisation}`}</span>
-        </h3>
+        <h3>{priceListItem.role}</h3>
         <ul>
           {priceListItem.items.map((experience, id) => {
             return <li key={id}>{experience}</li>;
