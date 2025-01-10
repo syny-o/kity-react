@@ -16,8 +16,23 @@
     /* aspect-ratio: 7 / 6; */
     object-fit: cover;
     border-radius: var(--gallery-item-border-radius);
-  }
+    opacity: 0;
+    animation: fadeInAnim .5s ease-in forwards;
 }
+
+}
+
+@keyframes fadeInAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+  
+
 
 .gallery-loader-wrapper {
   margin: auto;
