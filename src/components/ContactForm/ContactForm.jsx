@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { API_URL_CONTACT_FORM } from "../../constants/global";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
 import { FaChevronRight, FaCheck } from "react-icons/fa";
+
+import getCookie from "../../helper_func/func_cookie";
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -68,6 +71,26 @@ const ContactForm = () => {
     }
   };
 
+
+  // this function is only needed in development when both domains (client/server) are different
+  const fetchCSRFToken = async () => {
+    const response = await fetch("http://localhost:8000", {
+      method: "GET",
+      credentials: "include", // Allow cookies
+    });
+  
+    // if (response.ok) {
+    //   console.log("CSRF cookie was set");
+    // } else {
+    //   console.error("Error loading CSRF cookie");
+    // }
+  };
+  
+  useEffect(() => {
+    fetchCSRFToken();
+  }, []);
+
+
   const sendFormDataToApi = async () => {
     setStatus("Odesílám...");
 
@@ -76,11 +99,18 @@ const ContactForm = () => {
       fData.set("name", formData.name);
       fData.set("email", formData.email);
       fData.set("message", formData.message);
-      console.log(JSON.stringify(formData));
+
+      // CSRF config
+      const csrfToken = getCookie('csrftoken');
+      const headers = {
+        'X-CSRFToken': csrfToken,
+      };
+
+
       const response = await fetch(API_URL_CONTACT_FORM, {
         method: "POST",
-        // headers: { "Content-Type": "application/json" },
-        // body: JSON.stringify(formData),
+        credentials: "include", // Sending Cookies
+        headers: headers,
         body: fData,
       });
 
@@ -93,7 +123,8 @@ const ContactForm = () => {
     } catch (error) {
       setStatus("Chyba, zkuste to prosím znovu.");
     }
-  };
+};
+
 
   return (
     <section id="contact" className="container">
