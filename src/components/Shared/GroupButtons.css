@@ -20,11 +20,11 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   cursor: pointer;
-  min-width: 250px;
+  min-width: 230px;
   border-left: none;
   border-right: none;
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 .group-button:first-of-type {
@@ -79,7 +79,7 @@ button i {
   font-size: var(--font-m);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .group-button {
     border-left: solid;
     border-right: solid;

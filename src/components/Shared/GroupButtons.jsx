@@ -1,4 +1,4 @@
-import { FaUser, FaBaby, FaUserFriends, FaChild } from "react-icons/fa";
+import { FaUser, FaBaby, FaUserFriends, FaChild, FaDollarSign } from "react-icons/fa";
 
 import "./GroupButtons.css";
 
@@ -46,6 +46,20 @@ function GroupButtons({ photosTypes, setPhotosType }) {
       >
         <FaBaby />
         Těhotné
+      </button>
+      <button
+        className={
+          photosTypes === "commerce-photos/"
+            ? "group-button group-button-selected"
+            : "group-button"
+        }
+        onClick={(e) => {
+          e.preventDefault();
+          setPhotosType("commerce-photos/");
+        }}
+      >
+        <FaDollarSign />
+        Komerce
       </button>
       <button
         className={
