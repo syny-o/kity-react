@@ -8,9 +8,9 @@
   --color-primary: #fff;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
-  --color-bg: #2d0426;
-  --color-special: coral;
-  --color-special: #d53f8c;
+  --color-bg: #5a232a;
+  --color-special: #ea8e80;
+
 
   /*Kity Colors*/
   --color-1: #edd9da;
@@ -63,7 +63,7 @@
   margin: auto;
   margin-top: 80px;
   max-width: 1400px;
-  background-color: #2d0426;
+  background-color: var(--color-bg)
 }
 
 /* .top-blur {

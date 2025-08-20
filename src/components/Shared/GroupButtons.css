@@ -40,9 +40,9 @@
 }
 
 .group-button-selected {
-  border-bottom-color: #d53f8c;
-  border-top-color: #d53f8c;
-  color: #d53f8c;
+  border-bottom-color: var(--color-special);
+  border-top-color: var(--color-special);
+  color: var(--color-special);
 }
 
 button i {
@@ -55,7 +55,7 @@ button i {
 }
 
 .multi-button:hover button:hover {
-  background: #d53f8c;
+  background: var(--color-special);
   color: #fff;
   box-shadow: 0 0 0.8em 0 rgba(213, 63, 140, 0.8);
   transform: translateY(-0.2em);
