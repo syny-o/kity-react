@@ -11,7 +11,7 @@ function Footer() {
         </div>
         <SocialBox />
         <div className="footer-text">
-          &copy; 2025 Markéta Synková Fotografka
+          &copy; 2026 Markéta Synková Fotografka
         </div>
       </div>
     </footer>
