@@ -1,6 +1,6 @@
 [
   {
-    "role": "Klasické",
+    "role": "Klasické balíčky",
     "price": "Od 2900 Kč",
     "items": [
       "30 - 90 minut focení",
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "role": "Svatební",
+    "role": "Svatební focení",
     "price": "Na dotaz",
     "items": [
       "Nafocení svatebního dne od ranních příprav po první tanec nebo dle domluvy"
