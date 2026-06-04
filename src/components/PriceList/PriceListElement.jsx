@@ -6,8 +6,8 @@ function PriceListElement({ priceListItem, id }) {
     <li key={id} className="price-list-item">
       <div className="img-wrapper">
         {priceListItem.role === "S vizáží" && <FaPalette />}
-        {priceListItem.role === "Portrétní" && <FaPortrait />}
-        {priceListItem.role === "Svatební" && <FaUserFriends />}
+        {priceListItem.role === "Klasické balíčky" && <FaPortrait />}
+        {priceListItem.role === "Svatební focení" && <FaUserFriends />}
       </div>
       <div className="price-list-item-details">
         <h3>{priceListItem.role}</h3>
